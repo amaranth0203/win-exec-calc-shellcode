@@ -89,7 +89,7 @@ find_winexec_x86:
      POP    ESP
       %endif
      POPAD
-     RET
+     ; RET
     %endif
   %elifdef FUNC
      POP    EAX
@@ -102,6 +102,6 @@ find_winexec_x86:
      XCHG   EDX, EAX
      POP    EAX
     %endif
-     RET
+     ; RET
   %endif
 %endif

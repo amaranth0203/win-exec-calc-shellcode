@@ -54,8 +54,9 @@ _shellcode:
 ; into the x86 shellcode.
 w32_exec_calc_shellcode:
 %include "w32-exec-calc-shellcode.asm"
-
+JMP EOF
 ; Since EAX does NOT get incremented on x64, the code did branch to the x64
 ; shellcode.
 w64_exec_calc_shellcode:
 %include "w64-exec-calc-shellcode.asm"
+EOF:

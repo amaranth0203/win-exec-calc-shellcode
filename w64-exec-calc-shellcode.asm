@@ -124,7 +124,7 @@ find_winexec_x64:
     POP     RCX
     POP     RAX
 %endif
-    RET                                   ; Return
+    ; RET                                   ; Return
 %else
 %ifdef CLEAN
     POP     RCX                           ; POP additional registers
@@ -136,6 +136,6 @@ find_winexec_x64:
 %ifdef CLEAN
     POP     RAX
 %endif
-    RET                                   ; Return
+    ; RET                                   ; Return
 %endif
 %endif
